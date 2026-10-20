@@ -1,0 +1,10 @@
+[package]
+name = "tessera-icon"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+description = "Renders the Tessera app icon and menu bar glyph"
+
+[dependencies]
+tiny-skia.workspace = true

@@ -1,0 +1,24 @@
+[package]
+name = "tessera"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Tessera — a macOS menu bar resource monitor and disk visualiser"
+
+[[bin]]
+name = "tessera"
+path = "src/main.rs"
+
+[dependencies]
+tessera-core.workspace = true
+libc.workspace = true
+objc2.workspace = true
+objc2-foundation.workspace = true
+objc2-app-kit.workspace = true
+block2.workspace = true
+egui.workspace = true
+eframe = { workspace = true, features = ["wgpu", "default_fonts", "persistence"] }
+serde.workspace = true
+serde_json.workspace = true
+winit = { version = "0.30", default-features = false }
